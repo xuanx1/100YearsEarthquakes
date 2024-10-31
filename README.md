@@ -1,3 +1,5 @@
+https://xuanx1.github.io/100YearsEarthquakes/index
+
 # 100YearsEarthquakes
 add github pages link
 
