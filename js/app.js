@@ -271,7 +271,7 @@ const toggleHeatMapButton = L.control({ position: "topright" });
 
 toggleHeatMapButton.onAdd = function () {
   const div = L.DomUtil.create("div", "info toggle-heatmap-button");
-  div.innerHTML = '<button id="toggleHeatMap" style="background: rgba(255, 121, 0, 0.2); border: 1px solid #ff7900; cursor: pointer; border-radius: 2px; padding-top: 5px; margin-left: -2px;"><img src="/images/heatmap.svg" alt="Heat Map" style="width: 18px; height: 19px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(400%);"></button>';
+  div.innerHTML = '<button id="toggleHeatMap" style="background: rgba(255, 121, 0, 0.2); border: 1px solid #ff7900; cursor: pointer; border-radius: 2px; padding-top: 5px; margin-left: -2px;"><img src="/100YearsEarthquakes/images/heatmap.svg" alt="Heat Map" style="width: 18px; height: 19px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(400%);"></button>';
   return div;
 };
 
@@ -296,7 +296,7 @@ const toggleButton = L.control({ position: "topright" });
 
 toggleButton.onAdd = function (map) {
   const div = L.DomUtil.create("div", "info toggle-button");
-  div.innerHTML = '<button id="toggleLayer" style="background: rgba(255, 121, 0, 0.2); border: 1px solid #ff7900; cursor: pointer; border-radius: 2px; padding-top: 5px; margin-left: -2px;"><img src="/images/quake.svg" alt="Toggle Earthquakes" style="width: 18px; height: 19px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(120%);"></button>';
+  div.innerHTML = '<button id="toggleLayer" style="background: rgba(255, 121, 0, 0.2); border: 1px solid #ff7900; cursor: pointer; border-radius: 2px; padding-top: 5px; margin-left: -2px;"><img src="/100YearsEarthquakes/images/quake.svg" alt="Toggle Earthquakes" style="width: 18px; height: 19px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(120%);"></button>';
   return div;
 };
 
@@ -544,7 +544,7 @@ timelineControl.onAdd = function (map) {
   let interval;
 
   const playButton = div.append("button")
-    .html('<img src="/images/play.svg" alt="Play" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">')
+    .html('<img src="/100YearsEarthquakes/images/play.svg" alt="Play" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">')
     .style("margin-right", "0px")
     .style("background", "none")
     .style("border", "none")
@@ -552,11 +552,11 @@ timelineControl.onAdd = function (map) {
       if (isPlaying) {
         clearInterval(interval);
         isPlaying = false;
-        playButton.html('<img src="/images/play.svg" alt="Play" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
+        playButton.html('<img src="/100YearsEarthquakes/images/play.svg" alt="Play" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
       } else {
         animateTimeline();
         isPlaying = true;
-        playButton.html('<img src="/images/pause.svg" alt="Pause" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
+        playButton.html('<img src="/100YearsEarthquakes/images/pause.svg" alt="Pause" style="width: 12px; height: 12px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
       }
     });
 
@@ -570,7 +570,7 @@ timelineControl.onAdd = function (map) {
       if (yearIndex >= years.length) {
         clearInterval(interval);
         isPlaying = false;
-        playButton.html('<img src="/images/play.svg" alt="Play" style="width: 20px; height: 20px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
+        playButton.html('<img src="/100YearsEarthquakes/images/play.svg" alt="Play" style="width: 20px; height: 20px; filter: invert(38%) sepia(100%) saturate(1000%) hue-rotate(359deg) brightness(100%) contrast(101%);">');
         return;
       }
       slider.property("value", years[yearIndex]).dispatch("input");
