@@ -1,9 +1,4 @@
-// import d3 library
-import * as d3 from "d3";
-import "leaflet";
-import 'leaflet.markercluster';
-import "leaflet/dist/leaflet.css";
-import "leaflet.heat";
+
 
 
 const app = d3
